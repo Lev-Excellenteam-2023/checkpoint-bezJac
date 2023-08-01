@@ -1,238 +1,251 @@
-==327260== Memcheck, a memory error detector
-==327260== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==327260== Using Valgrind-3.18.1 and LibVEX; rerun with -h for copyright info
-==327260== Command: ./main
-==327260== Parent PID: 17370
-==327260== 
-==327260== Use of uninitialised value of size 8
-==327260==    at 0x1095E2: loadStudent (in /home/bezjac/checkpoint-bezJac/main)
-==327260==    by 0x1097D6: createSchool (in /home/bezjac/checkpoint-bezJac/main)
-==327260==    by 0x1092DF: main (in /home/bezjac/checkpoint-bezJac/main)
-==327260==    by 0x4893D8F: __libc_start_call_main (libc_start_call_main.h:58)
-==327260==    by 0x4893E3F: __libc_start_main@@GLIBC_2.34 (libc-start.c:392)
-==327260==    by 0x1091E4: _start (in /home/bezjac/checkpoint-bezJac/main)
-==327260==    by 0x1FFF000077: ???
-==327260==    by 0x1B: ???
-==327260== 
-==327260== Conditional jump or move depends on uninitialised value(s)
-==327260==    at 0x484EE72: strcpy (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
-==327260==    by 0x109355: createStudent (in /home/bezjac/checkpoint-bezJac/main)
-==327260==    by 0x109668: loadStudent (in /home/bezjac/checkpoint-bezJac/main)
-==327260==    by 0x1097D6: createSchool (in /home/bezjac/checkpoint-bezJac/main)
-==327260==    by 0x1092DF: main (in /home/bezjac/checkpoint-bezJac/main)
-==327260==    by 0x4893D8F: __libc_start_call_main (libc_start_call_main.h:58)
-==327260==    by 0x4893E3F: __libc_start_main@@GLIBC_2.34 (libc-start.c:392)
-==327260==    by 0x1091E4: _start (in /home/bezjac/checkpoint-bezJac/main)
-==327260==    by 0x1FFF000077: ???
-==327260==    by 0x1B: ???
-==327260== 
-==327260== Conditional jump or move depends on uninitialised value(s)
-==327260==    at 0x484EE87: strcpy (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
-==327260==    by 0x109355: createStudent (in /home/bezjac/checkpoint-bezJac/main)
-==327260==    by 0x109668: loadStudent (in /home/bezjac/checkpoint-bezJac/main)
-==327260==    by 0x1097D6: createSchool (in /home/bezjac/checkpoint-bezJac/main)
-==327260==    by 0x1092DF: main (in /home/bezjac/checkpoint-bezJac/main)
-==327260==    by 0x4893D8F: __libc_start_call_main (libc_start_call_main.h:58)
-==327260==    by 0x4893E3F: __libc_start_main@@GLIBC_2.34 (libc-start.c:392)
-==327260==    by 0x1091E4: _start (in /home/bezjac/checkpoint-bezJac/main)
-==327260==    by 0x1FFF000077: ???
-==327260==    by 0x1B: ???
-==327260== 
-==327260== Conditional jump or move depends on uninitialised value(s)
-==327260==    at 0x484EE72: strcpy (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
-==327260==    by 0x10936C: createStudent (in /home/bezjac/checkpoint-bezJac/main)
-==327260==    by 0x109668: loadStudent (in /home/bezjac/checkpoint-bezJac/main)
-==327260==    by 0x1097D6: createSchool (in /home/bezjac/checkpoint-bezJac/main)
-==327260==    by 0x1092DF: main (in /home/bezjac/checkpoint-bezJac/main)
-==327260==    by 0x4893D8F: __libc_start_call_main (libc_start_call_main.h:58)
-==327260==    by 0x4893E3F: __libc_start_main@@GLIBC_2.34 (libc-start.c:392)
-==327260==    by 0x1091E4: _start (in /home/bezjac/checkpoint-bezJac/main)
-==327260==    by 0x1FFF000077: ???
-==327260==    by 0x1B: ???
-==327260== 
-==327260== Conditional jump or move depends on uninitialised value(s)
-==327260==    at 0x484EE87: strcpy (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
-==327260==    by 0x10936C: createStudent (in /home/bezjac/checkpoint-bezJac/main)
-==327260==    by 0x109668: loadStudent (in /home/bezjac/checkpoint-bezJac/main)
-==327260==    by 0x1097D6: createSchool (in /home/bezjac/checkpoint-bezJac/main)
-==327260==    by 0x1092DF: main (in /home/bezjac/checkpoint-bezJac/main)
-==327260==    by 0x4893D8F: __libc_start_call_main (libc_start_call_main.h:58)
-==327260==    by 0x4893E3F: __libc_start_main@@GLIBC_2.34 (libc-start.c:392)
-==327260==    by 0x1091E4: _start (in /home/bezjac/checkpoint-bezJac/main)
-==327260==    by 0x1FFF000077: ???
-==327260==    by 0x1B: ???
-==327260== 
-==327260== Conditional jump or move depends on uninitialised value(s)
-==327260==    at 0x484EE72: strcpy (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
-==327260==    by 0x109383: createStudent (in /home/bezjac/checkpoint-bezJac/main)
-==327260==    by 0x109668: loadStudent (in /home/bezjac/checkpoint-bezJac/main)
-==327260==    by 0x1097D6: createSchool (in /home/bezjac/checkpoint-bezJac/main)
-==327260==    by 0x1092DF: main (in /home/bezjac/checkpoint-bezJac/main)
-==327260==    by 0x4893D8F: __libc_start_call_main (libc_start_call_main.h:58)
-==327260==    by 0x4893E3F: __libc_start_main@@GLIBC_2.34 (libc-start.c:392)
-==327260==    by 0x1091E4: _start (in /home/bezjac/checkpoint-bezJac/main)
-==327260==    by 0x1FFF000077: ???
-==327260==    by 0x1B: ???
-==327260== 
-==327260== Conditional jump or move depends on uninitialised value(s)
-==327260==    at 0x484EE87: strcpy (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
-==327260==    by 0x109383: createStudent (in /home/bezjac/checkpoint-bezJac/main)
-==327260==    by 0x109668: loadStudent (in /home/bezjac/checkpoint-bezJac/main)
-==327260==    by 0x1097D6: createSchool (in /home/bezjac/checkpoint-bezJac/main)
-==327260==    by 0x1092DF: main (in /home/bezjac/checkpoint-bezJac/main)
-==327260==    by 0x4893D8F: __libc_start_call_main (libc_start_call_main.h:58)
-==327260==    by 0x4893E3F: __libc_start_main@@GLIBC_2.34 (libc-start.c:392)
-==327260==    by 0x1091E4: _start (in /home/bezjac/checkpoint-bezJac/main)
-==327260==    by 0x1FFF000077: ???
-==327260==    by 0x1B: ???
-==327260== 
-==327260== Use of uninitialised value of size 8
-==327260==    at 0x10969F: loadStudent (in /home/bezjac/checkpoint-bezJac/main)
-==327260==    by 0x1097D6: createSchool (in /home/bezjac/checkpoint-bezJac/main)
-==327260==    by 0x1092DF: main (in /home/bezjac/checkpoint-bezJac/main)
-==327260==    by 0x4893D8F: __libc_start_call_main (libc_start_call_main.h:58)
-==327260==    by 0x4893E3F: __libc_start_main@@GLIBC_2.34 (libc-start.c:392)
-==327260==    by 0x1091E4: _start (in /home/bezjac/checkpoint-bezJac/main)
-==327260==    by 0x1FFF000077: ???
-==327260==    by 0x1B: ???
-==327260== 
-==327260== Use of uninitialised value of size 8
-==327260==    at 0x1096E8: loadStudent (in /home/bezjac/checkpoint-bezJac/main)
-==327260==    by 0x1097D6: createSchool (in /home/bezjac/checkpoint-bezJac/main)
-==327260==    by 0x1092DF: main (in /home/bezjac/checkpoint-bezJac/main)
-==327260==    by 0x4893D8F: __libc_start_call_main (libc_start_call_main.h:58)
-==327260==    by 0x4893E3F: __libc_start_main@@GLIBC_2.34 (libc-start.c:392)
-==327260==    by 0x1091E4: _start (in /home/bezjac/checkpoint-bezJac/main)
-==327260==    by 0x1FFF000077: ???
-==327260==    by 0x1B: ???
-==327260== 
-==327260== Conditional jump or move depends on uninitialised value(s)
-==327260==    at 0x484ED19: strlen (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
-==327260==    by 0x48E0DB0: __vfprintf_internal (vfprintf-internal.c:1517)
-==327260==    by 0x48CA81E: printf (printf.c:33)
-==327260==    by 0x10940F: printStudent (in /home/bezjac/checkpoint-bezJac/main)
-==327260==    by 0x1098BE: printStudents (in /home/bezjac/checkpoint-bezJac/main)
-==327260==    by 0x1092EE: main (in /home/bezjac/checkpoint-bezJac/main)
-==327260==    by 0x4893D8F: __libc_start_call_main (libc_start_call_main.h:58)
-==327260==    by 0x4893E3F: __libc_start_main@@GLIBC_2.34 (libc-start.c:392)
-==327260==    by 0x1091E4: _start (in /home/bezjac/checkpoint-bezJac/main)
-==327260==    by 0x1FFF000077: ???
-==327260==    by 0x1B: ???
-==327260== 
-==327260== Conditional jump or move depends on uninitialised value(s)
-==327260==    at 0x48F57B7: _IO_new_file_xsputn (fileops.c:1218)
-==327260==    by 0x48F57B7: _IO_file_xsputn@@GLIBC_2.2.5 (fileops.c:1196)
-==327260==    by 0x48E108B: outstring_func (vfprintf-internal.c:239)
-==327260==    by 0x48E108B: __vfprintf_internal (vfprintf-internal.c:1517)
-==327260==    by 0x48CA81E: printf (printf.c:33)
-==327260==    by 0x10940F: printStudent (in /home/bezjac/checkpoint-bezJac/main)
-==327260==    by 0x1098BE: printStudents (in /home/bezjac/checkpoint-bezJac/main)
-==327260==    by 0x1092EE: main (in /home/bezjac/checkpoint-bezJac/main)
-==327260==    by 0x4893D8F: __libc_start_call_main (libc_start_call_main.h:58)
-==327260==    by 0x4893E3F: __libc_start_main@@GLIBC_2.34 (libc-start.c:392)
-==327260==    by 0x1091E4: _start (in /home/bezjac/checkpoint-bezJac/main)
-==327260==    by 0x1FFF000077: ???
-==327260==    by 0x1B: ???
-==327260== 
-==327260== Conditional jump or move depends on uninitialised value(s)
-==327260==    at 0x484ED28: strlen (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
-==327260==    by 0x48E0DB0: __vfprintf_internal (vfprintf-internal.c:1517)
-==327260==    by 0x48CA81E: printf (printf.c:33)
-==327260==    by 0x10940F: printStudent (in /home/bezjac/checkpoint-bezJac/main)
-==327260==    by 0x1098BE: printStudents (in /home/bezjac/checkpoint-bezJac/main)
-==327260==    by 0x1092EE: main (in /home/bezjac/checkpoint-bezJac/main)
-==327260==    by 0x4893D8F: __libc_start_call_main (libc_start_call_main.h:58)
-==327260==    by 0x4893E3F: __libc_start_main@@GLIBC_2.34 (libc-start.c:392)
-==327260==    by 0x1091E4: _start (in /home/bezjac/checkpoint-bezJac/main)
-==327260==    by 0x1FFF000077: ???
-==327260==    by 0x1B: ???
-==327260== 
-==327260== Syscall param write(buf) points to uninitialised byte(s)
-==327260==    at 0x497EA37: write (write.c:26)
-==327260==    by 0x48F4F6C: _IO_file_write@@GLIBC_2.2.5 (fileops.c:1180)
-==327260==    by 0x48F6A60: new_do_write (fileops.c:448)
-==327260==    by 0x48F6A60: _IO_new_do_write (fileops.c:425)
-==327260==    by 0x48F6A60: _IO_do_write@@GLIBC_2.2.5 (fileops.c:422)
-==327260==    by 0x48F5754: _IO_new_file_xsputn (fileops.c:1243)
-==327260==    by 0x48F5754: _IO_file_xsputn@@GLIBC_2.2.5 (fileops.c:1196)
-==327260==    by 0x48E0049: outstring_func (vfprintf-internal.c:239)
-==327260==    by 0x48E0049: __vfprintf_internal (vfprintf-internal.c:1593)
-==327260==    by 0x48CA81E: printf (printf.c:33)
-==327260==    by 0x10940F: printStudent (in /home/bezjac/checkpoint-bezJac/main)
-==327260==    by 0x1098BE: printStudents (in /home/bezjac/checkpoint-bezJac/main)
-==327260==    by 0x1092EE: main (in /home/bezjac/checkpoint-bezJac/main)
-==327260==    by 0x4893D8F: __libc_start_call_main (libc_start_call_main.h:58)
-==327260==    by 0x4893E3F: __libc_start_main@@GLIBC_2.34 (libc-start.c:392)
-==327260==    by 0x1091E4: _start (in /home/bezjac/checkpoint-bezJac/main)
-==327260==    by 0x1FFF000077: ???
-==327260==    by 0x1B: ???
-==327260==  Address 0x5ff320e is 14 bytes inside a block of size 1,024 alloc'd
-==327260==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
-==327260==    by 0x48E8C23: _IO_file_doallocate (filedoalloc.c:101)
-==327260==    by 0x48F7D5F: _IO_doallocbuf (genops.c:347)
-==327260==    by 0x48F6FDF: _IO_file_overflow@@GLIBC_2.2.5 (fileops.c:744)
-==327260==    by 0x48F5754: _IO_new_file_xsputn (fileops.c:1243)
-==327260==    by 0x48F5754: _IO_file_xsputn@@GLIBC_2.2.5 (fileops.c:1196)
-==327260==    by 0x48DF1CC: outstring_func (vfprintf-internal.c:239)
-==327260==    by 0x48DF1CC: __vfprintf_internal (vfprintf-internal.c:1263)
-==327260==    by 0x48CA81E: printf (printf.c:33)
-==327260==    by 0x1093EC: printStudent (in /home/bezjac/checkpoint-bezJac/main)
-==327260==    by 0x1098BE: printStudents (in /home/bezjac/checkpoint-bezJac/main)
-==327260==    by 0x1092EE: main (in /home/bezjac/checkpoint-bezJac/main)
-==327260==    by 0x4893D8F: __libc_start_call_main (libc_start_call_main.h:58)
-==327260==    by 0x4893E3F: __libc_start_main@@GLIBC_2.34 (libc-start.c:392)
-==327260==    by 0x1091E4: _start (in /home/bezjac/checkpoint-bezJac/main)
-==327260==    by 0x1FFF000077: ???
-==327260==    by 0x1B: ???
-==327260== 
-==327260== Conditional jump or move depends on uninitialised value(s)
-==327260==    at 0x484ED19: strlen (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
-==327260==    by 0x48E0DB0: __vfprintf_internal (vfprintf-internal.c:1517)
-==327260==    by 0x48CA81E: printf (printf.c:33)
-==327260==    by 0x10942E: printStudent (in /home/bezjac/checkpoint-bezJac/main)
-==327260==    by 0x1098BE: printStudents (in /home/bezjac/checkpoint-bezJac/main)
-==327260==    by 0x1092EE: main (in /home/bezjac/checkpoint-bezJac/main)
-==327260==    by 0x4893D8F: __libc_start_call_main (libc_start_call_main.h:58)
-==327260==    by 0x4893E3F: __libc_start_main@@GLIBC_2.34 (libc-start.c:392)
-==327260==    by 0x1091E4: _start (in /home/bezjac/checkpoint-bezJac/main)
-==327260==    by 0x1FFF000077: ???
-==327260==    by 0x1B: ???
-==327260== 
-==327260== Conditional jump or move depends on uninitialised value(s)
-==327260==    at 0x484ED28: strlen (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
-==327260==    by 0x48E0DB0: __vfprintf_internal (vfprintf-internal.c:1517)
-==327260==    by 0x48CA81E: printf (printf.c:33)
-==327260==    by 0x10942E: printStudent (in /home/bezjac/checkpoint-bezJac/main)
-==327260==    by 0x1098BE: printStudents (in /home/bezjac/checkpoint-bezJac/main)
-==327260==    by 0x1092EE: main (in /home/bezjac/checkpoint-bezJac/main)
-==327260==    by 0x4893D8F: __libc_start_call_main (libc_start_call_main.h:58)
-==327260==    by 0x4893E3F: __libc_start_main@@GLIBC_2.34 (libc-start.c:392)
-==327260==    by 0x1091E4: _start (in /home/bezjac/checkpoint-bezJac/main)
-==327260==    by 0x1FFF000077: ???
-==327260==    by 0x1B: ???
-==327260== 
-==327260== Conditional jump or move depends on uninitialised value(s)
-==327260==    at 0x48F57B7: _IO_new_file_xsputn (fileops.c:1218)
-==327260==    by 0x48F57B7: _IO_file_xsputn@@GLIBC_2.2.5 (fileops.c:1196)
-==327260==    by 0x48E108B: outstring_func (vfprintf-internal.c:239)
-==327260==    by 0x48E108B: __vfprintf_internal (vfprintf-internal.c:1517)
-==327260==    by 0x48CA81E: printf (printf.c:33)
-==327260==    by 0x10942E: printStudent (in /home/bezjac/checkpoint-bezJac/main)
-==327260==    by 0x1098BE: printStudents (in /home/bezjac/checkpoint-bezJac/main)
-==327260==    by 0x1092EE: main (in /home/bezjac/checkpoint-bezJac/main)
-==327260==    by 0x4893D8F: __libc_start_call_main (libc_start_call_main.h:58)
-==327260==    by 0x4893E3F: __libc_start_main@@GLIBC_2.34 (libc-start.c:392)
-==327260==    by 0x1091E4: _start (in /home/bezjac/checkpoint-bezJac/main)
-==327260==    by 0x1FFF000077: ???
-==327260==    by 0x1B: ???
-==327260== 
-==327260== 
-==327260== HEAP SUMMARY:
-==327260==     in use at exit: 0 bytes in 0 blocks
-==327260==   total heap usage: 100,004 allocs, 100,004 frees, 16,005,752 bytes allocated
-==327260== 
-==327260== All heap blocks were freed -- no leaks are possible
-==327260== 
-==327260== Use --track-origins=yes to see where uninitialised values come from
-==327260== For lists of detected and suppressed errors, rerun with: -s
-==327260== ERROR SUMMARY: 32 errors from 16 contexts (suppressed: 0 from 0)
+==119704== Memcheck, a memory error detector
+==119704== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==119704== Using Valgrind-3.18.1 and LibVEX; rerun with -h for copyright info
+==119704== Command: ./main
+==119704== Parent PID: 38583
+==119704== 
+==119704== Use of uninitialised value of size 8
+==119704==    at 0x10A8BA: loadStudent (School.c:18)
+==119704==    by 0x10AAAE: createSchool (School.c:40)
+==119704==    by 0x10A4F6: menu (main.c:325)
+==119704==    by 0x10A75F: main (main.c:389)
+==119704==    by 0x4893D8F: __libc_start_call_main (libc_start_call_main.h:58)
+==119704==    by 0x4893E3F: __libc_start_main@@GLIBC_2.34 (libc-start.c:392)
+==119704==    by 0x1092A4: _start (in /home/bezjac/checkpoint-bezJac/main)
+==119704==    by 0x1FFF000077: ???
+==119704==    by 0x1B: ???
+==119704== 
+==119704== Conditional jump or move depends on uninitialised value(s)
+==119704==    at 0x484EE72: strcpy (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==119704==    by 0x10AD58: createStudent (Student.c:8)
+==119704==    by 0x10A940: loadStudent (School.c:21)
+==119704==    by 0x10AAAE: createSchool (School.c:40)
+==119704==    by 0x10A4F6: menu (main.c:325)
+==119704==    by 0x10A75F: main (main.c:389)
+==119704==    by 0x4893D8F: __libc_start_call_main (libc_start_call_main.h:58)
+==119704==    by 0x4893E3F: __libc_start_main@@GLIBC_2.34 (libc-start.c:392)
+==119704==    by 0x1092A4: _start (in /home/bezjac/checkpoint-bezJac/main)
+==119704==    by 0x1FFF000077: ???
+==119704==    by 0x1B: ???
+==119704== 
+==119704== Conditional jump or move depends on uninitialised value(s)
+==119704==    at 0x484EE87: strcpy (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==119704==    by 0x10AD58: createStudent (Student.c:8)
+==119704==    by 0x10A940: loadStudent (School.c:21)
+==119704==    by 0x10AAAE: createSchool (School.c:40)
+==119704==    by 0x10A4F6: menu (main.c:325)
+==119704==    by 0x10A75F: main (main.c:389)
+==119704==    by 0x4893D8F: __libc_start_call_main (libc_start_call_main.h:58)
+==119704==    by 0x4893E3F: __libc_start_main@@GLIBC_2.34 (libc-start.c:392)
+==119704==    by 0x1092A4: _start (in /home/bezjac/checkpoint-bezJac/main)
+==119704==    by 0x1FFF000077: ???
+==119704==    by 0x1B: ???
+==119704== 
+==119704== Conditional jump or move depends on uninitialised value(s)
+==119704==    at 0x484EE72: strcpy (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==119704==    by 0x10AD6F: createStudent (Student.c:9)
+==119704==    by 0x10A940: loadStudent (School.c:21)
+==119704==    by 0x10AAAE: createSchool (School.c:40)
+==119704==    by 0x10A4F6: menu (main.c:325)
+==119704==    by 0x10A75F: main (main.c:389)
+==119704==    by 0x4893D8F: __libc_start_call_main (libc_start_call_main.h:58)
+==119704==    by 0x4893E3F: __libc_start_main@@GLIBC_2.34 (libc-start.c:392)
+==119704==    by 0x1092A4: _start (in /home/bezjac/checkpoint-bezJac/main)
+==119704==    by 0x1FFF000077: ???
+==119704==    by 0x1B: ???
+==119704== 
+==119704== Conditional jump or move depends on uninitialised value(s)
+==119704==    at 0x484EE87: strcpy (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==119704==    by 0x10AD6F: createStudent (Student.c:9)
+==119704==    by 0x10A940: loadStudent (School.c:21)
+==119704==    by 0x10AAAE: createSchool (School.c:40)
+==119704==    by 0x10A4F6: menu (main.c:325)
+==119704==    by 0x10A75F: main (main.c:389)
+==119704==    by 0x4893D8F: __libc_start_call_main (libc_start_call_main.h:58)
+==119704==    by 0x4893E3F: __libc_start_main@@GLIBC_2.34 (libc-start.c:392)
+==119704==    by 0x1092A4: _start (in /home/bezjac/checkpoint-bezJac/main)
+==119704==    by 0x1FFF000077: ???
+==119704==    by 0x1B: ???
+==119704== 
+==119704== Conditional jump or move depends on uninitialised value(s)
+==119704==    at 0x484EE72: strcpy (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==119704==    by 0x10AD86: createStudent (Student.c:10)
+==119704==    by 0x10A940: loadStudent (School.c:21)
+==119704==    by 0x10AAAE: createSchool (School.c:40)
+==119704==    by 0x10A4F6: menu (main.c:325)
+==119704==    by 0x10A75F: main (main.c:389)
+==119704==    by 0x4893D8F: __libc_start_call_main (libc_start_call_main.h:58)
+==119704==    by 0x4893E3F: __libc_start_main@@GLIBC_2.34 (libc-start.c:392)
+==119704==    by 0x1092A4: _start (in /home/bezjac/checkpoint-bezJac/main)
+==119704==    by 0x1FFF000077: ???
+==119704==    by 0x1B: ???
+==119704== 
+==119704== Conditional jump or move depends on uninitialised value(s)
+==119704==    at 0x484EE87: strcpy (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==119704==    by 0x10AD86: createStudent (Student.c:10)
+==119704==    by 0x10A940: loadStudent (School.c:21)
+==119704==    by 0x10AAAE: createSchool (School.c:40)
+==119704==    by 0x10A4F6: menu (main.c:325)
+==119704==    by 0x10A75F: main (main.c:389)
+==119704==    by 0x4893D8F: __libc_start_call_main (libc_start_call_main.h:58)
+==119704==    by 0x4893E3F: __libc_start_main@@GLIBC_2.34 (libc-start.c:392)
+==119704==    by 0x1092A4: _start (in /home/bezjac/checkpoint-bezJac/main)
+==119704==    by 0x1FFF000077: ???
+==119704==    by 0x1B: ???
+==119704== 
+==119704== Use of uninitialised value of size 8
+==119704==    at 0x10A977: loadStudent (School.c:22)
+==119704==    by 0x10AAAE: createSchool (School.c:40)
+==119704==    by 0x10A4F6: menu (main.c:325)
+==119704==    by 0x10A75F: main (main.c:389)
+==119704==    by 0x4893D8F: __libc_start_call_main (libc_start_call_main.h:58)
+==119704==    by 0x4893E3F: __libc_start_main@@GLIBC_2.34 (libc-start.c:392)
+==119704==    by 0x1092A4: _start (in /home/bezjac/checkpoint-bezJac/main)
+==119704==    by 0x1FFF000077: ???
+==119704==    by 0x1B: ???
+==119704== 
+==119704== Use of uninitialised value of size 8
+==119704==    at 0x10A9C0: loadStudent (School.c:23)
+==119704==    by 0x10AAAE: createSchool (School.c:40)
+==119704==    by 0x10A4F6: menu (main.c:325)
+==119704==    by 0x10A75F: main (main.c:389)
+==119704==    by 0x4893D8F: __libc_start_call_main (libc_start_call_main.h:58)
+==119704==    by 0x4893E3F: __libc_start_main@@GLIBC_2.34 (libc-start.c:392)
+==119704==    by 0x1092A4: _start (in /home/bezjac/checkpoint-bezJac/main)
+==119704==    by 0x1FFF000077: ???
+==119704==    by 0x1B: ???
+==119704== 
+==119704== Conditional jump or move depends on uninitialised value(s)
+==119704==    at 0x484ED19: strlen (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==119704==    by 0x48E0DB0: __vfprintf_internal (vfprintf-internal.c:1517)
+==119704==    by 0x48CA749: fprintf (fprintf.c:32)
+==119704==    by 0x10AE19: printStudent (Student.c:18)
+==119704==    by 0x10A273: printUnderperformedStudents (main.c:276)
+==119704==    by 0x10A6B8: menu (main.c:366)
+==119704==    by 0x10A75F: main (main.c:389)
+==119704==    by 0x4893D8F: __libc_start_call_main (libc_start_call_main.h:58)
+==119704==    by 0x4893E3F: __libc_start_main@@GLIBC_2.34 (libc-start.c:392)
+==119704==    by 0x1092A4: _start (in /home/bezjac/checkpoint-bezJac/main)
+==119704==    by 0x1FFF000077: ???
+==119704==    by 0x1B: ???
+==119704== 
+==119704== Conditional jump or move depends on uninitialised value(s)
+==119704==    at 0x48F57B7: _IO_new_file_xsputn (fileops.c:1218)
+==119704==    by 0x48F57B7: _IO_file_xsputn@@GLIBC_2.2.5 (fileops.c:1196)
+==119704==    by 0x48E108B: outstring_func (vfprintf-internal.c:239)
+==119704==    by 0x48E108B: __vfprintf_internal (vfprintf-internal.c:1517)
+==119704==    by 0x48CA749: fprintf (fprintf.c:32)
+==119704==    by 0x10AE19: printStudent (Student.c:18)
+==119704==    by 0x10A273: printUnderperformedStudents (main.c:276)
+==119704==    by 0x10A6B8: menu (main.c:366)
+==119704==    by 0x10A75F: main (main.c:389)
+==119704==    by 0x4893D8F: __libc_start_call_main (libc_start_call_main.h:58)
+==119704==    by 0x4893E3F: __libc_start_main@@GLIBC_2.34 (libc-start.c:392)
+==119704==    by 0x1092A4: _start (in /home/bezjac/checkpoint-bezJac/main)
+==119704==    by 0x1FFF000077: ???
+==119704==    by 0x1B: ???
+==119704== 
+==119704== Conditional jump or move depends on uninitialised value(s)
+==119704==    at 0x484ED28: strlen (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==119704==    by 0x48E0DB0: __vfprintf_internal (vfprintf-internal.c:1517)
+==119704==    by 0x48CA749: fprintf (fprintf.c:32)
+==119704==    by 0x10AE19: printStudent (Student.c:18)
+==119704==    by 0x10A273: printUnderperformedStudents (main.c:276)
+==119704==    by 0x10A6B8: menu (main.c:366)
+==119704==    by 0x10A75F: main (main.c:389)
+==119704==    by 0x4893D8F: __libc_start_call_main (libc_start_call_main.h:58)
+==119704==    by 0x4893E3F: __libc_start_main@@GLIBC_2.34 (libc-start.c:392)
+==119704==    by 0x1092A4: _start (in /home/bezjac/checkpoint-bezJac/main)
+==119704==    by 0x1FFF000077: ???
+==119704==    by 0x1B: ???
+==119704== 
+==119704== Syscall param write(buf) points to uninitialised byte(s)
+==119704==    at 0x497EA37: write (write.c:26)
+==119704==    by 0x48F4F6C: _IO_file_write@@GLIBC_2.2.5 (fileops.c:1180)
+==119704==    by 0x48F6A60: new_do_write (fileops.c:448)
+==119704==    by 0x48F6A60: _IO_new_do_write (fileops.c:425)
+==119704==    by 0x48F6A60: _IO_do_write@@GLIBC_2.2.5 (fileops.c:422)
+==119704==    by 0x48F5754: _IO_new_file_xsputn (fileops.c:1243)
+==119704==    by 0x48F5754: _IO_file_xsputn@@GLIBC_2.2.5 (fileops.c:1196)
+==119704==    by 0x48E0049: outstring_func (vfprintf-internal.c:239)
+==119704==    by 0x48E0049: __vfprintf_internal (vfprintf-internal.c:1593)
+==119704==    by 0x48CA749: fprintf (fprintf.c:32)
+==119704==    by 0x10AE19: printStudent (Student.c:18)
+==119704==    by 0x10A273: printUnderperformedStudents (main.c:276)
+==119704==    by 0x10A6B8: menu (main.c:366)
+==119704==    by 0x10A75F: main (main.c:389)
+==119704==    by 0x4893D8F: __libc_start_call_main (libc_start_call_main.h:58)
+==119704==    by 0x4893E3F: __libc_start_main@@GLIBC_2.34 (libc-start.c:392)
+==119704==    by 0x1092A4: _start (in /home/bezjac/checkpoint-bezJac/main)
+==119704==    by 0x1FFF000077: ???
+==119704==    by 0x1B: ???
+==119704==  Address 0x5ff320e is 14 bytes inside a block of size 1,024 alloc'd
+==119704==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==119704==    by 0x48E8C23: _IO_file_doallocate (filedoalloc.c:101)
+==119704==    by 0x48F7D5F: _IO_doallocbuf (genops.c:347)
+==119704==    by 0x48F6FDF: _IO_file_overflow@@GLIBC_2.2.5 (fileops.c:744)
+==119704==    by 0x48F5754: _IO_new_file_xsputn (fileops.c:1243)
+==119704==    by 0x48F5754: _IO_file_xsputn@@GLIBC_2.2.5 (fileops.c:1196)
+==119704==    by 0x48EAF9B: puts (ioputs.c:40)
+==119704==    by 0x10A505: menu (main.c:329)
+==119704==    by 0x10A75F: main (main.c:389)
+==119704==    by 0x4893D8F: __libc_start_call_main (libc_start_call_main.h:58)
+==119704==    by 0x4893E3F: __libc_start_main@@GLIBC_2.34 (libc-start.c:392)
+==119704==    by 0x1092A4: _start (in /home/bezjac/checkpoint-bezJac/main)
+==119704==    by 0x1FFF000077: ???
+==119704==    by 0x1B: ???
+==119704== 
+==119704== Conditional jump or move depends on uninitialised value(s)
+==119704==    at 0x484ED19: strlen (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==119704==    by 0x48E0DB0: __vfprintf_internal (vfprintf-internal.c:1517)
+==119704==    by 0x48CA749: fprintf (fprintf.c:32)
+==119704==    by 0x10AE3C: printStudent (Student.c:19)
+==119704==    by 0x10A273: printUnderperformedStudents (main.c:276)
+==119704==    by 0x10A6B8: menu (main.c:366)
+==119704==    by 0x10A75F: main (main.c:389)
+==119704==    by 0x4893D8F: __libc_start_call_main (libc_start_call_main.h:58)
+==119704==    by 0x4893E3F: __libc_start_main@@GLIBC_2.34 (libc-start.c:392)
+==119704==    by 0x1092A4: _start (in /home/bezjac/checkpoint-bezJac/main)
+==119704==    by 0x1FFF000077: ???
+==119704==    by 0x1B: ???
+==119704== 
+==119704== Conditional jump or move depends on uninitialised value(s)
+==119704==    at 0x484ED28: strlen (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==119704==    by 0x48E0DB0: __vfprintf_internal (vfprintf-internal.c:1517)
+==119704==    by 0x48CA749: fprintf (fprintf.c:32)
+==119704==    by 0x10AE3C: printStudent (Student.c:19)
+==119704==    by 0x10A273: printUnderperformedStudents (main.c:276)
+==119704==    by 0x10A6B8: menu (main.c:366)
+==119704==    by 0x10A75F: main (main.c:389)
+==119704==    by 0x4893D8F: __libc_start_call_main (libc_start_call_main.h:58)
+==119704==    by 0x4893E3F: __libc_start_main@@GLIBC_2.34 (libc-start.c:392)
+==119704==    by 0x1092A4: _start (in /home/bezjac/checkpoint-bezJac/main)
+==119704==    by 0x1FFF000077: ???
+==119704==    by 0x1B: ???
+==119704== 
+==119704== Conditional jump or move depends on uninitialised value(s)
+==119704==    at 0x48F57B7: _IO_new_file_xsputn (fileops.c:1218)
+==119704==    by 0x48F57B7: _IO_file_xsputn@@GLIBC_2.2.5 (fileops.c:1196)
+==119704==    by 0x48E108B: outstring_func (vfprintf-internal.c:239)
+==119704==    by 0x48E108B: __vfprintf_internal (vfprintf-internal.c:1517)
+==119704==    by 0x48CA749: fprintf (fprintf.c:32)
+==119704==    by 0x10AE3C: printStudent (Student.c:19)
+==119704==    by 0x10A273: printUnderperformedStudents (main.c:276)
+==119704==    by 0x10A6B8: menu (main.c:366)
+==119704==    by 0x10A75F: main (main.c:389)
+==119704==    by 0x4893D8F: __libc_start_call_main (libc_start_call_main.h:58)
+==119704==    by 0x4893E3F: __libc_start_main@@GLIBC_2.34 (libc-start.c:392)
+==119704==    by 0x1092A4: _start (in /home/bezjac/checkpoint-bezJac/main)
+==119704==    by 0x1FFF000077: ???
+==119704==    by 0x1B: ???
+==119704== 
+==119704== 
+==119704== HEAP SUMMARY:
+==119704==     in use at exit: 0 bytes in 0 blocks
+==119704==   total heap usage: 100,006 allocs, 100,006 frees, 16,006,936 bytes allocated
+==119704== 
+==119704== All heap blocks were freed -- no leaks are possible
+==119704== 
+==119704== Use --track-origins=yes to see where uninitialised values come from
+==119704== For lists of detected and suppressed errors, rerun with: -s
+==119704== ERROR SUMMARY: 32 errors from 16 contexts (suppressed: 0 from 0)

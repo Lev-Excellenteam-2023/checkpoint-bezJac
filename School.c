@@ -1,7 +1,7 @@
 #include "School.h"
 #include <stdio.h>
 #include <string.h>
-#include <malloc.h>
+#include <stdlib.h>
 
 void loadStudent(School *school, char *line) {
     char first_name[50];
@@ -44,12 +44,12 @@ School createSchool(char *file_path) {
     return tempSchool;
 }
 
-void printStudents(School* school) {
+void printStudents(FILE* stream,School* school) {
     for (int i = 0; i < NUM_OF_LEVELS; ++i) {
         for (int j = 0; j < NUM_OF_CLASSES; ++j) {
             Student *current = school->school[i][j];
             while (current != NULL) {
-                printStudent(current, i, j);
+                printStudent(stream,current, i, j);
                 current = current->next;
             }
         }
@@ -57,14 +57,29 @@ void printStudents(School* school) {
 }
 
 void freeAllStudents(School* school){
-	 for (int i = 0; i < NUM_OF_LEVELS; ++i) {
+    for (int i = 0; i < NUM_OF_LEVELS; ++i) {
         for (int j = 0; j < NUM_OF_CLASSES; ++j) {
             Student* place_holder = school->school[i][j];
-			Student* deleter;
+            Student* deleter;
             while (place_holder != NULL) {
                 deleter = place_holder;
-				place_holder = place_holder->next;
+                place_holder = place_holder->next;
                 free(deleter);
+            }
+        }
+    }
+}
+
+Student* findStudent(School* school,char* first_name,char* last_name){
+    for (int i = 0; i < NUM_OF_LEVELS; ++i) {
+        for (int j = 0; j < NUM_OF_CLASSES; ++j) {
+            Student* current = school->school[i][j];
+            while(current!=NULL)
+            {
+                if(strcmp(first_name,current->first_name)==0 && strcmp(last_name,current->last_name)==0){
+                   return current;
+                }
+                current = current->next;
             }
         }
     }
